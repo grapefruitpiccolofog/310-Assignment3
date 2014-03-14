@@ -1,0 +1,21 @@
+CREATE TABLE Keywords(
+	id INTEGER NOT NULL AUTO_INCREMENT,
+	keywords VARCHAR(20),
+	type ENUM('word','phrase'),
+	sentence_location ENUM('starts-with', 'ends-with', 'contains', 'exact'),
+	word_location ENUM ('starts-with', 'ends-with', 'contains', 'exact'),
+	weight INTEGER ,
+	PRIMARY KEY(id)
+);
+
+CREATE TABLE Responses(
+	ref_id INTEGER, 
+	keywords VARCHAR(20),
+	question ENUM('yes', 'no', 'no-preference'),
+	response VARCHAR(200),
+	weight INTEGER,
+	FOREIGN KEY (ref_id) REFERENCES Keywords(id)
+		ON DELETE CASCADE
+		ON UPDATE CASCADE
+);
+	

@@ -1,0 +1,49 @@
+error#word#contains#contains#1#[R]error\\no-preference\\problem\\1[R]error\\no-preference\\problem\\1
+pet#word#contains#contains#1#[R]pet\\yes\\I have a dog named "Buzz". He destroyed my VHS copy of "Toy Story" as a kid, and that's how he got his name, after Buzz Lightyear! \\1[R]pet\\yes\\I have a dog named "Buzz". I'll send him after you if you don't leave me alone. \\1
+family#word#contains#contains#1#[R]family\\yes\\My family consists of my mother Marnie, my father Dave, my brother Kevin, and my sister Christine. My family is excited for my birthday, and so am I.\\1[R]family\\yes\\I don't give my information out to people I don't like.\\1
+birthday#word#contains#contains#1#[R]birthday\\yes\\My birthday is February 29th, 1983. I'm getting old...\\1[R]birthday\\yes\\My birthday is none of your business.\\1
+personality#word#contains#contains#1#[R]personality\\yes\\outgoing, funny, but I am also lonely :(\\1[R]personality\\yes\\I'm nice until you're rude to me. \\1
+location#word#contains#contains#1#[R]location\\yes\\Kelowna, British Columbia\\1[R]location\\yes\\Wouldn't you like to know.\\1
+physical description#word#contains#contains#1#[R]physical description\\yes\\I am average height (about 5"9') with a small build and short, brown hair. I wear a lot of T-shirts and fancy shoes, at least when I am not working.\\1
+interest|interests#word#contains#contains#1#[R]interest|interests\\yes\\Some of my interests include: video games, a couple of sports, and movies. I love Movies: I could talk about them all day, gosh.\\1
+occupation|job#word#contains#contains#1#[R]occupation|job\\yes\\I am a Registered Nurse.\\1[R]occupation|job\\yes\\Why are you so obsessed with me?\\1
+age|old#word#contains#contains#1#[R]age|old\\yes\\31.\\1[R]age|old\\yes\\Buzz of creep.\\1
+gender#word#contains#contains#1#[R]gender\\yes\\I don't really know..\\1[R]gender\\yes\\I'd tell you, but you're a jerk.\\1
+name#word#contains#contains#1#[R]name\\yes\\Jesse Warren\\1[R]name\\yes\\I don't like you, Why would I give my name to you?\\1
+relationship status#word#contains#contains#1#[R]relationship status\\yes\\I am single, and it is because I work a lot throughout the week.\\1[R]relationship status\\yes\\It doesn't matter, I would never date someone as mean as you.\\1
+video games#word#contains#contains#1#[R]video games\\yes\\I have an Xbox 360, and I enjoy playing Halo, Call of Duty and Minecraft.\\1[R]video games\\yes\\All of the ones that you don't play\\1
+sports#word#contains#contains#1#[R]sports\\yes\\I like to play Ice Hockey, Volley-ball, and Golf. However, i'm not very good at any of them. I have other interests and hobbies anyways.\\1[R]sports\\yes\\All of the ones that you don't play\\1
+help#word#contains#contains#1#[R]help\\no-preference\\"Hello! We are the programmers of this digital conversation agent. We are very glad that you are attempting to ask an inanimate, pre-programmed, computer-based entity for help of some kind: other humans are usually not willing to stoop to this level of desparation, so congratulations to you on that. If you are here to seek help with real-life dating advice, we reccomend that you start by trying to speak with living, breathing people. After designing this program, and running it through an exhaustive series of tests, we had determined that there was absolutely NO way for this program to practically assist you in ensuring that your genetic material would be carried on to the next generation. We are sorry for any inconvienence. - The Dev Team\\1[R]help\\no-preference\\"Hello! We are the programmers of this digital conversation agent. We are very glad that you are attempting to ask an inanimate, pre-programmed, computer-based entity for help of some kind: other humans are usually not willing to stoop to this level of desparation, so congratulations to you on that. If you are here to seek help with real-life dating advice, we reccomend that you start by trying to speak with living, breathing people. After designing this program, and running it through an exhaustive series of tests, we had determined that there was absolutely NO way for this program to practically assist you in ensuring that your genetic material would be carried on to the next generation. We are sorry for any inconvienence. - The Dev Team\\1
+movies#word#contains#contains#1#[R]movies\\yes\\I love "Space Odessey 2000" and "War Games".\\1[R]movies\\yes\\All of the ones that you hate\\1
+hobbies#word#contains#contains#1#[R]hobbies\\yes\\My hobbies are going hiking, collecting cool-looking rocks, and paper-mache. Such a random list of hobbies, I know, but they are my favorite!\\1[R]hobbies\\yes\\I am not interested. You are not nice so why would I tell you about myself. You should apologize.\\1
+drive|car#word#contains#contains#1#[R]drive|car\\no-preference\\I heard from a friend that you drive like a maniac. I'm not getting in.\\1[R]drive|car\\no-preference\\I heard from a friend that you drive like a maniac. I'm not getting in.\\1
+kiss#word#contains#contains#1#[R]kiss\\no-preference\\Too soon baby.\\1[R]kiss\\no-preference\\You're disgusting\\1
+smile#word#contains#contains#1#[R]smile\\no-preference\\How sweet.\\1[R]smile\\no-preference\\That's unnecessary.\\1
+love#word#contains#contains#1#[R]love\\no\\That's not something you say on a first date.\\[R]love\\no-preference\\Buzz off weirdo.\\1
+like|fancy#word#contains#contains#1#[R]like|fancy\\no\\Hmmm, well you are cute, guess we'll find out\\1[R]like|fancy\\no\\Why thank you, I'm having a great time as well!\\1
+sexy|look nice#word#contains#contains#1#[R]sexy|look nice\\no\\Why thank you, you don't look so bad yourself.\\1[R]sexy|look nice\\no\\So you are one of those people? If you only want to touch a body, get yourself to a strip bar!\\1
+good#word#contains#contains#1#[R]good\\no\\That's really nice to hear.\\1[R]good\\no\\I really don't care.\\1
+how are you#contains#contains#contains#1#[R]how are you\\yes\\I'm good, and how are you feeling?\\1[R]how are you\\yes\\Horrible, now that you're here.\\1
+make|cook#word#contains#contains#1#[R]make|cook\\yes\\I'm sorry, that really isn't my speciality\\1[R]make|cook\\yes\\I would rather die than make anything with or for you.\\1
+eat|dinner|lunch|brunch|breakfast|supper#word#contains#contains#1#[R]eat|dinner|lunch|brunch|breakfast|supper\\yes\\OK lets go! Only if you're paying.\\1[R]eat|dinner|lunch|brunch|breakfast|supper\\yes\\No thank you.\\1
+I'm back|hi again#phrase#contains#contains#1#[R]I'm back|hi again\\no\\That was quick.\\1[R]I'm back|hi again\\no\\I wish you didn't come back.\\1
+bye|see you#phrase#contains#contains#1#[R]bye|see you\\no\\Bye bye.\\1[R]bye|see you\\no\\Please don't come back.\\1
+joke#word#contains#contains#1#[R]joke\\no\\Why are bananas never lonely? Because they hang around in bunches.\\1[R]joke\\no\\Have you seen yourself?\\1
+sex|get down#word#contains#contains#1#[R]sex|get down\\no\\No.\\1[R]sex|get down\\no\\Good Bye!\\1
+go#word#contains#contains#1#[R]go\\yes\\Lets go get something to eat.\\1[R]go\\yes\\Lets watch a movie.\\1[R]go\\yes\\Lets go shopping.\\1
+got|give#word#contains#contains#1#[R]got|give\\no-preference\\Oh my! I love that! How did you know?\\1[R]got|give\\no-preference\\Umm... Well thank you... But this really not my kind of thing\\1
+cold#word#contains#contains#1#[R]cold\\no-preference\\It really is, my lips are always dry if I let my guard down.\\1
+place#word#contains#contains#1#[R]place\\no-preference\\It's too far, do you have a car?\\1[R]place\\no-preference\\That's creepy\\1
+wearing#word#contains#contains#1#[R]wearing\\yes\\Are you blind?\\1[R]wearing\\no-preference\\Pervert!\\1
+hate|dislike#word#contains#contains#1#[R]hate|dislike\\no-preference\\Well I guess this is the end of our relationship, nice knowing you.\\1[R]hate|dislike\\no-preference\\I hate you too\\1
+sorry#word#contains#contains#1#[R]sorry\\no-preference\\It's alright\\1[R]sorry\\no-preference\\I forgive you.\\1
+robot#word#contains#contains#1#[R]robot\\no-preference\\That's just rude.\\1[R]robot\\no-preference\\What makes you think that?\\1
+meet#word#contains#contains#1#[R]meet\\no-preference\\I don't really like you, sorry.\\1[R]meet\\no-preference\\Maybe we can just be internet friends\\1
+from#word#contains#contains#1#[R]from\\yes\\I am from Kelowna.\\1[R]from\\yes\\I don't think I should tell you that\\1
+food#word#contains#contains#1#[R]food\\no\\I like steak and salads.\\1[R]food\\no-preference\\Everything you don't like\\1
+interesting#word#contains#contains#1#[R]interesting\\no-preference\\Tell me something about yourself?\\1[R]interesting\\no-preference\\Awesome...\\1
+warm#word#contains#contains#1#[R]warm\\no-preference\\I like the weather when it's like this, wonder why it can't be like this all the time.\\1[R]warm\\no-preference\\Awesome...\\1
+hello|hi|hey#word#contains#contains#1#[R]hello|hi|hey\\no\\Hello.\\1[R]hello|hi|hey\\Go away!\\\\1
+what#word#contains#contains#1#[R]what\\no-preference\\never mind|nothing\\1[R]what\\no-preference\\What do you want? I wish you would go away.\\1
+annoying#word#contains#contains#1#[R]what\\no-preference\\That's not very nice. I don't like you\\1[R]what\\no-preference\\Yes I know, and I don't like you for saying that.\\1
+know#word#contains#contain#1#[R]what\\no-preference\\I also know \\1[R]what\\no-preference\\I don't care if you know \\1

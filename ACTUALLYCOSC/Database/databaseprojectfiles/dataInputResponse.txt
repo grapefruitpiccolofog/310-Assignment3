@@ -1,0 +1,108 @@
+﻿import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Scanner;
+
+
+
+
+
+
+//Input response information into the database
+public class dataInputResponse {
+        public static void main(String[] args) {
+                String url = "jdbc:mysql://cosc304.ok.ubc.ca/db_group5";
+                String uid = "oyesufu";
+                String pw = "38455101";
+                int refid = 0;
+                String keywords = "";
+                int question = 0;
+                String questions= "";
+                String response = "";
+                int weight = 0;
+                
+                boolean correct = false;
+                
+                
+                Scanner scan = new Scanner(System.in);
+                System.out.println("Enter refid:");
+                refid = scan.nextInt();
+                scan.nextLine();
+                System.out.println("Enter keywords:");
+                keywords = scan.nextLine();
+                System.out.println("Is it a question? (yes=1, no=2, no-preference=3):");
+                question = scan.nextInt();
+                scan.nextLine();
+                correct = false;
+                while (correct == false){
+                        switch (question){
+                                case 1: questions = "yes";
+                                correct = true;
+                                break;
+                                
+                                case 2: questions = "no";
+                                correct = true;
+                                break;
+                                
+                                case 3: questions = "no-preference";
+                                correct = true;
+                                break;
+                                
+                                default: System.out.println("reenter (yes=1, no=2, no-preference=3):");
+                                question = scan.nextInt();
+                                scan.nextLine();
+                                break;
+                                
+                        }
+                        
+                }
+                System.out.println("Enter the response:");
+                response = scan.nextLine();
+                System.out.println("Enter Weight");
+                weight = scan.nextInt();
+                scan.nextLine();
+                
+
+
+
+
+                try {// Load driver class
+                        Class.forName("com.mysql.jdbc.Driver");
+                }
+                catch (java.lang.ClassNotFoundException e) {
+                        System.err.println("ClassNotFoundException: " +e);
+                }
+
+
+                Connection con = null;
+                try {
+                        con = DriverManager.getConnection(url, uid, pw);
+                        Statement stmt = con.createStatement();
+                        int rowcount = stmt.executeUpdate("INSERT INTO Responses "
+                                        + "VALUES ('"+ refid +"', '"+ keywords +"', '"+ questions +"', '"+ response +"', "+ weight +")");
+                        
+                        System.out.println("Success!");
+                        
+                }
+                catch (SQLException ex)
+                {
+                        System.err.println("SQLException: " + ex);
+                }
+                finally
+                {
+                        if (con != null)
+                                try
+                                {
+                                        con.close();
+                                }
+                                catch (SQLException ex)
+                                {
+                                        System.err.println("SQLException: " + ex);
+                                }
+                }
+        }
+
+
+}

@@ -1,0 +1,149 @@
+﻿import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Scanner;
+
+
+
+
+
+
+//Input keyword information into the database
+public class dataInputKeyword {
+        public static void main(String[] args) {
+                String url = "jdbc:mysql://cosc304.ok.ubc.ca/db_group5";
+                String uid = "oyesufu";
+                String pw = "38455101";
+                String keyword = "";
+                int type = 0;
+                String types = "";
+                int sloc = 0;
+                String slocs = "";
+                int wloc = 0;
+                String wlocs = "";
+                int weight = 0;
+                
+                boolean correct = false;
+                
+                
+                Scanner scan = new Scanner(System.in);
+                System.out.println("Enter keyword:");
+                keyword = scan.nextLine();
+                System.out.println("Enter Type (word=1, phrase=2):");
+                type = scan.nextInt();
+                while (correct == false){
+                        if (type == 1){
+                                types = "word";
+                                correct = true;
+                        }else if (type == 2){
+                                types = "phrase";
+                                correct = true;
+                        }else{
+                                System.out.println("reenter (word=1, phrase=2)");
+                                type = scan.nextInt();
+                        }
+                }
+                System.out.println("Enter Sentence Location (starts-with=1, ends-with=2, contains=3, exact=4):");
+                sloc = scan.nextInt();
+                correct = false;
+                while (correct == false){
+                        switch (sloc){
+                                case 1: slocs = "starts-with";
+                                correct = true;
+                                break;
+                                
+                                case 2: slocs = "ends-with";
+                                correct = true;
+                                break;
+                                
+                                case 3: slocs = "contains";
+                                correct = true;
+                                break;
+                                
+                                case 4: slocs = "exact";
+                                correct = true;
+                                break;
+                                
+                                default: System.out.println("reenter (starts-with=1, ends-with=2, contains=3, exact=4)");
+                                sloc = scan.nextInt();
+                                break;
+                                
+                        }
+                        
+                }
+                System.out.println("Enter Word Location (starts-with=1, ends-with=2, contains=3, exact=4):");
+                wloc = scan.nextInt();
+                correct = false;
+                while (correct == false){
+                        switch (wloc){
+                                case 1: wlocs = "starts-with";
+                                correct = true;
+                                break;
+                                
+                                case 2: wlocs = "ends-with";
+                                correct = true;
+                                break;
+                                
+                                case 3: wlocs = "contains";
+                                correct = true;
+                                break;
+                                
+                                case 4: wlocs = "exact";
+                                correct = true;
+                                break;
+                                
+                                default: System.out.println("reenter (starts-with=1, ends-with=2, contains=3, exact=4)");
+                                wloc = scan.nextInt();
+                                break;
+                                
+                        }
+                        
+                }
+                System.out.println("Enter Weight");
+                weight = scan.nextInt();
+                
+
+
+
+
+                try {// Load driver class
+                        Class.forName("com.mysql.jdbc.Driver");
+                }
+                catch (java.lang.ClassNotFoundException e) {
+                        System.err.println("ClassNotFoundException: " +e);
+                }
+
+
+                Connection con = null;
+                try {
+                        con = DriverManager.getConnection(url, uid, pw);
+                        Statement stmt = con.createStatement();
+                        int rowcount = stmt.executeUpdate("INSERT INTO Keywords "
+                                        + "(keywords, type, sentence_location, word_location, weight) "
+                                        + "VALUES ('"+ keyword +"', '"+ types +"', '"+ slocs +"', '"+ wlocs +"', "+ weight +")");
+                        
+                        System.out.println("Success!");
+                        
+                }
+                catch (SQLException ex)
+                {
+                        System.err.println("SQLException: " + ex);
+                }
+                finally
+                {
+                        if (con != null)
+                                try
+                                {
+                                        con.close();
+                                }
+                                catch (SQLException ex)
+                                {
+                                        System.err.println("SQLException: " + ex);
+                                }
+                }
+        }
+
+
+}
