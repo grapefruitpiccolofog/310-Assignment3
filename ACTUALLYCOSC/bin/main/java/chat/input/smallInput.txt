@@ -1,4 +1,0 @@
-hello#word#contains#contains#1#[R]hello\\no\\Hello.\\1[R]hello\\no\\Don't talk to me.\\1
-what#word#contains#contains#1#[R]what\\no-preference\\never mind\\1[R]what\\no-preference\\go away\\1
-annoying#word#contains#contains#1#[R]what\\no-preference\\That's not very nice. I don't like you\\1[R]what\\no-preference\\Yes I know, and I don't like you for saying that.\\1
-sorry#word#contains#contains#1#[R]sorry\\no-preference\\It's alright\\1[R]sorry\\no-preference\\I forgive you.\\1

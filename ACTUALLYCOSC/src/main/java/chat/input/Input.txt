@@ -47,3 +47,6 @@ hello|hi|hey#word#contains#contains#1#[R]hello|hi|hey\\no\\Hello.\\1[R]hello|hi|
 what#word#contains#contains#1#[R]what\\no-preference\\never mind|nothing\\1[R]what\\no-preference\\What do you want? I wish you would go away.\\1
 annoying#word#contains#contains#1#[R]what\\no-preference\\That's not very nice. I don't like you\\1[R]what\\no-preference\\Yes I know, and I don't like you for saying that.\\1
 know#word#contains#contain#1#[R]what\\no-preference\\I also know \\1[R]what\\no-preference\\I don't care if you know \\1
+been#word#contains#contain#1#[R]been\\no-preference\\I've heard about \\1[R]been\\no-preference\\I've heard about  \\1
+languages#word#contains#contain#1#[R]languages\\no-preference\\I can also speak French. \\1[R]languages\\no-preference\\I can also speak French. \\1
+understand#word#contains#contain#1#[R]understand\\no-preference\\Alright, I'll switch back to English. \\1[R]understand\\no-preference\\Alright, I'll switch back to English.  \\1
